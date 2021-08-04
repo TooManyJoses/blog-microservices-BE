@@ -1,8 +1,10 @@
 const express = require('express');
 const { randomBytes } = require('crypto');
+const cors = require('cors');
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // since this is a small porject o play around with
 // microservices not going to set up a db and jut store info locally
